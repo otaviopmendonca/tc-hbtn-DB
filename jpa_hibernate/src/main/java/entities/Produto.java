@@ -1,4 +1,4 @@
- package com.techcamps.cadastros.entities;
+package entities;
 
 import javax.persistence.*;
 

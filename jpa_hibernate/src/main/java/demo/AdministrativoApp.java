@@ -1,7 +1,7 @@
-package com.techcamps.cadastros.demo;
+package demo;
 
-import com.techcamps.cadastros.entities.Produto;
-import com.techcamps.cadastros.models.ProdutoModel;
+import entities.Produto;
+import models.ProdutoModel;
 import java.util.List;
 
 public class AdministrativoApp {

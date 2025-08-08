@@ -1,9 +1,7 @@
-package com.techcamps.cadastros.models;
+package models;
 
 import entities.Pessoa;
-
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class PessoaModel {
