@@ -6,6 +6,7 @@ import models.CursoModel;
 import java.util.Date;
 
 public class GestaoCursosMain {
+
     public static void main(String[] args) {
         AlunoModel alunoModel = new AlunoModel();
         CursoModel cursoModel = new CursoModel();

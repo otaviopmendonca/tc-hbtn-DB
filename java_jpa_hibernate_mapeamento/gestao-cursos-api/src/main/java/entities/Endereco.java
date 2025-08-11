@@ -1,6 +1,6 @@
 package entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 public class Endereco {
@@ -21,75 +21,75 @@ public class Endereco {
     @JoinColumn(name = "aluno_id")
     private Aluno aluno;
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public String getLogradouro() {
-		return logradouro;
-	}
+    public String getLogradouro() {
+        return logradouro;
+    }
 
-	public void setLogradouro(String logradouro) {
-		this.logradouro = logradouro;
-	}
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
 
-	public String getEndereco() {
-		return endereco;
-	}
+    public String getEndereco() {
+        return endereco;
+    }
 
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
-	public String getNumero() {
-		return numero;
-	}
+    public String getNumero() {
+        return numero;
+    }
 
-	public void setNumero(String numero) {
-		this.numero = numero;
-	}
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 
-	public String getBairro() {
-		return bairro;
-	}
+    public String getBairro() {
+        return bairro;
+    }
 
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
-	}
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
 
-	public String getCidade() {
-		return cidade;
-	}
+    public String getCidade() {
+        return cidade;
+    }
 
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
 
-	public String getEstado() {
-		return estado;
-	}
+    public String getEstado() {
+        return estado;
+    }
 
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 
-	public Integer getCep() {
-		return cep;
-	}
+    public Integer getCep() {
+        return cep;
+    }
 
-	public void setCep(Integer cep) {
-		this.cep = cep;
-	}
+    public void setCep(Integer cep) {
+        this.cep = cep;
+    }
 
-	public Aluno getAluno() {
-		return aluno;
-	}
+    public Aluno getAluno() {
+        return aluno;
+    }
 
-	public void setAluno(Aluno aluno) {
-		this.aluno = aluno;
-	}
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
 }

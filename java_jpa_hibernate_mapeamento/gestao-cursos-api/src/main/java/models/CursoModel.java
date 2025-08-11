@@ -1,38 +1,32 @@
 package models;
 
 import entities.Curso;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import java.util.List;
 
 public class CursoModel {
 
+    private EntityManagerFactory emf;
+
+    public CursoModel() {
+        this.emf = Persistence.createEntityManagerFactory("gestao-cursos-jpa");
+    }
+
     public void create(Curso curso) {
-        EntityManagerFactory emf = null;
-        EntityManager em = null;
+        EntityManager em = emf.createEntityManager();
 
         try {
-            System.out.println("Iniciando a criação do curso");
-            emf = Persistence.createEntityManagerFactory("gestao-cursos-jpa");
-            em = emf.createEntityManager();
             em.getTransaction().begin();
             em.persist(curso);
             em.getTransaction().commit();
             System.out.println("Curso criado com sucesso!");
         } catch (Exception e) {
-            if (em != null && em.isOpen()) {
-                em.close();
-            }
-            if (em != null && em.getTransaction().isActive()) {
-                em.getTransaction().rollback();
-            }
+            em.getTransaction().rollback();
             System.err.println("Erro ao criar o curso: " + e.getMessage());
         } finally {
-            if (em != null && em.isOpen()) {
-                em.close();
-            }
-            System.out.println("Finalizando a criação do curso");
+            em.close();
         }
     }
 
