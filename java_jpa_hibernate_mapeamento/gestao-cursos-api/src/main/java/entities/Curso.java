@@ -77,6 +77,4 @@ public class Curso {
 	public void setAlunos(List<Aluno> alunos) {
 		this.alunos = alunos;
 	}
-
-    
 }

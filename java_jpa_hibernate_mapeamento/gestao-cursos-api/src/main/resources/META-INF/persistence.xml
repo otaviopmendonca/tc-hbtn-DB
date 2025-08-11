@@ -6,7 +6,7 @@
     <persistence-unit name="gestao-cursos-jpa" transaction-type="RESOURCE_LOCAL">
         <properties>
 
-            <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:database_admin_jpa.db" />
+            <property name="javax.persistence.jdbc.ujavac -versionrl" value="jdbc:sqlite:database_admin_jpa.db" />
             <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
 
             <property name="hibernate.hbm2ddl.auto" value="update" />
